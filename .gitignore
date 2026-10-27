@@ -3,7 +3,13 @@ dataset/
 results*/
 checkpoints/
 *zip*/
-.vscode/
+# Keep machine-specific editor settings and download caches local.
+.vscode/*
+# Share the two portable, read-only learning scripts.
+!.vscode/qdta_step01_to_q.py
+!.vscode/reproduce_feature_lengths.py
+# Download/evaluation logs stay on the machine where they were generated.
+*.log
 __pycache__/
 tvr/
 *.hdf5
